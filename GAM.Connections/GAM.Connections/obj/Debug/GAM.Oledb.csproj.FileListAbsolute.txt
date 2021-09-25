@@ -1,0 +1,30 @@
+c:\users\usr\documents\visual studio 2012\Projects\GAM.Oledb\GAM.Oledb\bin\Debug\GAM.Oledb.dll
+c:\users\usr\documents\visual studio 2012\Projects\GAM.Oledb\GAM.Oledb\bin\Debug\GAM.Oledb.pdb
+c:\users\usr\documents\visual studio 2012\Projects\GAM.Oledb\GAM.Oledb\obj\Debug\GAM.Oledb.dll
+c:\users\usr\documents\visual studio 2012\Projects\GAM.Oledb\GAM.Oledb\obj\Debug\GAM.Oledb.pdb
+C:\Users\usr\Documents\Visual Studio 2012\Projects\GAM.Oledb\GAM.Oledb\obj\Debug\GAM.Oledb.csprojResolveAssemblyReference.cache
+D:\etb\13981112\Etebarat\GAM.Oledb\GAM.Oledb\bin\Debug\GAM.Oledb.dll
+D:\etb\13981112\Etebarat\GAM.Oledb\GAM.Oledb\bin\Debug\GAM.Oledb.pdb
+D:\etb\13981112\Etebarat\GAM.Oledb\GAM.Oledb\obj\Debug\GAM.Oledb.dll
+D:\etb\13981112\Etebarat\GAM.Oledb\GAM.Oledb\obj\Debug\GAM.Oledb.pdb
+C:\Users\usr\Desktop\etb4\Etebarat\GAM.Oledb\GAM.Oledb\bin\Debug\GAM.Oledb.dll
+C:\Users\usr\Desktop\etb4\Etebarat\GAM.Oledb\GAM.Oledb\bin\Debug\GAM.Oledb.pdb
+C:\Users\usr\Desktop\etb4\Etebarat\GAM.Oledb\GAM.Oledb\obj\Debug\GAM.Oledb.dll
+C:\Users\usr\Desktop\etb4\Etebarat\GAM.Oledb\GAM.Oledb\obj\Debug\GAM.Oledb.pdb
+C:\Users\usr\Desktop\etb4\Etebarat\GAM.App\bin\Debug\GAM.Oledb.dll
+C:\Users\usr\Desktop\etb4\Etebarat\GAM.App\bin\Debug\GAM.Oledb.pdb
+D:\GAM\GAM.App\bin\Debug\GAM.Oledb.dll
+D:\GAM\GAM.App\bin\Debug\GAM.Oledb.pdb
+D:\GAM\GAM.Oledb\GAM.Oledb\obj\Debug\GAM.Oledb.dll
+D:\GAM\GAM.Oledb\GAM.Oledb\obj\Debug\GAM.Oledb.pdb
+D:\GAM\GAM.Oledb\GAM.Oledb\bin\Debug\GAM.Oledb.dll
+D:\GAM\GAM.Oledb\GAM.Oledb\bin\Debug\GAM.Oledb.pdb
+C:\Users\usr\Desktop\GAM\GAM.Oledb\GAM.Oledb\bin\Debug\GAM.Oledb.dll
+C:\Users\usr\Desktop\GAM\GAM.Oledb\GAM.Oledb\bin\Debug\GAM.Oledb.pdb
+C:\Users\usr\Desktop\GAM\GAM.Oledb\GAM.Oledb\obj\Debug\GAM.Oledb.dll
+C:\Users\usr\Desktop\GAM\GAM.Oledb\GAM.Oledb\obj\Debug\GAM.Oledb.pdb
+D:\GAM1\GAM.Oledb\GAM.Oledb\bin\Debug\GAM.Oledb.dll
+D:\GAM1\GAM.Oledb\GAM.Oledb\bin\Debug\GAM.Oledb.pdb
+D:\GAM1\GAM.Oledb\GAM.Oledb\obj\Debug\GAM.Oledb.csprojResolveAssemblyReference.cache
+D:\GAM1\GAM.Oledb\GAM.Oledb\obj\Debug\GAM.Oledb.dll
+D:\GAM1\GAM.Oledb\GAM.Oledb\obj\Debug\GAM.Oledb.pdb

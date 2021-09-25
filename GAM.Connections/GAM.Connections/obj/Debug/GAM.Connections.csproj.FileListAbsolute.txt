@@ -1,0 +1,13 @@
+D:\GAM\GAM.Oledb\GAM.Oledb\bin\Debug\GAM.Connections.dll
+D:\GAM\GAM.Oledb\GAM.Oledb\bin\Debug\GAM.Connections.pdb
+D:\GAM\GAM.Oledb\GAM.Oledb\obj\Debug\GAM.Connections.dll
+D:\GAM\GAM.Oledb\GAM.Oledb\obj\Debug\GAM.Connections.pdb
+D:\GAM\GAM.Connections\GAM.Connections\bin\Debug\GAM.Connections.dll
+D:\GAM\GAM.Connections\GAM.Connections\bin\Debug\GAM.Connections.pdb
+D:\GAM\GAM.Connections\GAM.Connections\obj\Debug\GAM.Connections.dll
+D:\GAM\GAM.Connections\GAM.Connections\obj\Debug\GAM.Connections.pdb
+D:\GAM\GAM.Connections\GAM.Connections\obj\Debug\GAM.Connections.csprojResolveAssemblyReference.cache
+C:\Users\usr\Desktop\GAM\GAM.Connections\GAM.Connections\bin\Debug\GAM.Connections.dll
+C:\Users\usr\Desktop\GAM\GAM.Connections\GAM.Connections\bin\Debug\GAM.Connections.pdb
+C:\Users\usr\Desktop\GAM\GAM.Connections\GAM.Connections\obj\Debug\GAM.Connections.dll
+C:\Users\usr\Desktop\GAM\GAM.Connections\GAM.Connections\obj\Debug\GAM.Connections.pdb
