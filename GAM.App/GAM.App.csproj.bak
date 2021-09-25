@@ -1,0 +1,1203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63C71D8D-1D4C-484E-9953-A8BCA291951E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GAM</RootNamespace>
+    <AssemblyName>GAM</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>GAM.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>bm.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DateTimeSelector">
+      <HintPath>..\..\..\..\Dlls\PersianDateTimeSelector\datetimeselector-master\datetimeselector-master\bin\Debug\DateTimeSelector.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Diagram.v17.1.Core, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.1.UI, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1.Wizard, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraDiagram.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="FarsiLibrary">
+      <HintPath>..\..\..\..\Dlls\Farsi Library\FarsiLibrary_src_2.5\FarsiLibrary\bin\Debug\FarsiLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="GAM.Connections, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GAM.Connections\GAM.Connections\bin\Debug\GAM.Connections.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>E:\Design\CSharp\Dlls\ZIP\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="MD.PersianDateTime, Version=3.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\X\Design\CSharp\Dlls\MD.PersianDateTime-master\MD.PersianDateTime\bin\Debug\MD.PersianDateTime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\Microsoft.Office.Interop.Excel\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\Microsoft.Office.Interop.Excel\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MoreLinq">
+      <HintPath>..\..\..\..\Dlls\MoreLINQ\MoreLinq.dll</HintPath>
+    </Reference>
+    <Reference Include="Office, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\Microsoft.Office.Interop.Excel\Office.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Stimulsoft.Base, Version=2015.1.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls, Version=2015.1.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Stimulsoft.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls.Win, Version=2015.1.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Stimulsoft.Controls.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2015.1.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Win, Version=2015.1.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Stimulsoft.Report.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dialogs\msgLoopLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\msgLoopLoading.Designer.cs">
+      <DependentUpon>msgLoopLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\msgProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\msgProgressBar.Designer.cs">
+      <DependentUpon>msgProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Information\dlgPostsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Information\dlgPostsList.Designer.cs">
+      <DependentUpon>dlgPostsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Information\dlgRulesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Information\dlgRulesList.Designer.cs">
+      <DependentUpon>dlgRulesList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Information\dlgJobsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Information\dlgJobsList.Designer.cs">
+      <DependentUpon>dlgJobsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Arshive\dlgArchiveLogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Arshive\dlgArchiveLogs.Designer.cs">
+      <DependentUpon>dlgArchiveLogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Arshive\dlgWriteFileNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Arshive\dlgWriteFileNo.Designer.cs">
+      <DependentUpon>dlgWriteFileNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Library\CircularsManager.cs" />
+    <Compile Include="Forms\Profile\Etebarat\Library\ExpertReportManager.cs" />
+    <Compile Include="Forms\Profile\Etebarat\Library\Letters.cs" />
+    <Compile Include="Forms\Profile\Etebarat\Library\RequestStatus.cs" />
+    <Compile Include="Forms\Profile\Etebarat\Library\ReviewReportManager.cs" />
+    <Compile Include="Forms\Profile\Etebarat\MyFiles\dlgAddExpertReportNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\MyFiles\dlgAddExpertReportNote.Designer.cs">
+      <DependentUpon>dlgAddExpertReportNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\MyFiles\dlgRejectLoanFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\MyFiles\dlgRejectLoanFile.Designer.cs">
+      <DependentUpon>dlgRejectLoanFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Print\dlgAddLinkedRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Print\dlgAddLinkedRequest.Designer.cs">
+      <DependentUpon>dlgAddLinkedRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Print\dlgFormNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Print\dlgFormNo.Designer.cs">
+      <DependentUpon>dlgFormNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Review\dlgAddFx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Review\dlgAddFx.Designer.cs">
+      <DependentUpon>dlgAddFx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\TehranApprovals\dlgAddRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\TehranApprovals\dlgAddRequest.Designer.cs">
+      <DependentUpon>dlgAddRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Information\Library\Notaries.cs" />
+    <Compile Include="Forms\Profile\frmSendComment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\frmSendComment.Designer.cs">
+      <DependentUpon>frmSendComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Hoghoghi\Circulation\frmCirculationLegalFiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Hoghoghi\Circulation\frmCirculationLegalFiles.Designer.cs">
+      <DependentUpon>frmCirculationLegalFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Hoghoghi\NewFile\dlgAddPlaque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Hoghoghi\NewFile\dlgAddPlaque.Designer.cs">
+      <DependentUpon>dlgAddPlaque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Kargozini\AllPersonnels\frmAllPersonnels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Kargozini\AllPersonnels\frmAllPersonnels.Designer.cs">
+      <DependentUpon>frmAllPersonnels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Kargozini\Personnel\dlgAddRule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Kargozini\Personnel\dlgAddRule.Designer.cs">
+      <DependentUpon>dlgAddRule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Kargozini\Personnel\dlgAllRules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Kargozini\Personnel\dlgAllRules.Designer.cs">
+      <DependentUpon>dlgAllRules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Kargozini\Library\PersonelsManager.cs" />
+    <Compile Include="Forms\Profile\Kargozini\Library\Posts.cs" />
+    <Compile Include="Forms\Profile\Kargozini\Library\Rules.cs" />
+    <Compile Include="Forms\Profile\Kargozini\Personnel\frmNewPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Kargozini\Personnel\frmNewPerson.Designer.cs">
+      <DependentUpon>frmNewPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\OfficialForms\dlgCirculars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\OfficialForms\dlgCirculars.Designer.cs">
+      <DependentUpon>dlgCirculars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\Master\dlgBranchInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\Master\dlgBranchInfo.Designer.cs">
+      <DependentUpon>dlgBranchInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\Master\dlgExportList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\Master\dlgExportList.Designer.cs">
+      <DependentUpon>dlgExportList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\Master\dlgResume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\Master\dlgResume.Designer.cs">
+      <DependentUpon>dlgResume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\Master\frmReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\Master\frmReports.Designer.cs">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Hoghoghi\Library\FileStatus.cs" />
+    <Compile Include="Forms\Profile\Hoghoghi\Library\LegalFileLevels.cs" />
+    <Compile Include="Forms\Profile\Hoghoghi\Library\LegalFilesManager.cs" />
+    <Compile Include="Forms\Profile\Hoghoghi\MyFiles\frmMyLegalFiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Hoghoghi\MyFiles\frmMyLegalFiles.Designer.cs">
+      <DependentUpon>frmMyLegalFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Arshive\dlgArshiveReviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Arshive\dlgArshiveReviewForm.Designer.cs">
+      <DependentUpon>dlgArshiveReviewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Hoghoghi\NewFile\dlgAddAction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Hoghoghi\NewFile\dlgAddAction.Designer.cs">
+      <DependentUpon>dlgAddAction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Hoghoghi\NewFile\dlgChangeLevels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Hoghoghi\NewFile\dlgChangeLevels.Designer.cs">
+      <DependentUpon>dlgChangeLevels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Review\dlgAddRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Review\dlgAddRequest.Designer.cs">
+      <DependentUpon>dlgAddRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Review\dlgHistoryLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Review\dlgHistoryLog.Designer.cs">
+      <DependentUpon>dlgHistoryLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\dlgSendLetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\dlgSendLetter.designer.cs">
+      <DependentUpon>dlgSendLetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Arshive\dlgAddCover.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Arshive\dlgAddCover.Designer.cs">
+      <DependentUpon>dlgAddCover.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Arshive\dlgAddLoanFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Arshive\dlgAddLoanFile.Designer.cs">
+      <DependentUpon>dlgAddLoanFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Arshive\dlgEditFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Arshive\dlgEditFile.Designer.cs">
+      <DependentUpon>dlgEditFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Hoghoghi\NewFile\frmNewLegalFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Hoghoghi\NewFile\frmNewLegalFile.Designer.cs">
+      <DependentUpon>frmNewLegalFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Review\frmReviewLoanFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Review\frmReviewLoanFile.Designer.cs">
+      <DependentUpon>frmReviewLoanFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Library\Notes.cs" />
+    <Compile Include="Forms\Reports\Master\dlgSortList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\Master\dlgSortList.Designer.cs">
+      <DependentUpon>dlgSortList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\Etebarat\Requests\dlgShowReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\Etebarat\Requests\dlgShowReport.Designer.cs">
+      <DependentUpon>dlgShowReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\Library\DatasetToXlsx.cs" />
+    <Compile Include="Forms\Reports\Library\IChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\Library\IChart.Designer.cs">
+      <DependentUpon>IChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\Library\ISeries.cs" />
+    <Compile Include="Forms\Reports\Library\ExpandGridView.cs" />
+    <Compile Include="Forms\Reports\Hoghoghi\frmLegalExpertsPerformance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\Hoghoghi\frmLegalExpertsPerformance.Designer.cs">
+      <DependentUpon>frmLegalExpertsPerformance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\Library\FormattingRules.cs" />
+    <Compile Include="Forms\Reports\Library\GridViewManager.cs" />
+    <Compile Include="Forms\Reports\Library\Packs.cs" />
+    <Compile Include="Forms\Reports\Library\TreeReportManager.cs" />
+    <Compile Include="Forms\Reports\Library\IChartLinks.cs" />
+    <Compile Include="Forms\Reports\Master\frmIChartView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\Master\frmIChartView.Designer.cs">
+      <DependentUpon>frmIChartView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\Queries\Module_31.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_17.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_25.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_29.cs" />
+    <Compile Include="Forms\Reports\TreeReports\frmTreeReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\TreeReports\frmTreeReports.Designer.cs">
+      <DependentUpon>frmTreeReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\Queries\Module_28.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_30.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_14.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_10.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_11.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_12.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_13.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_15.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_16.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_18.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_19.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_20.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_21.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_22.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_23.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_24.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_26.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_27.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_06.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_05.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_01.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_02.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_04.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_03.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_07.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_08.cs" />
+    <Compile Include="Forms\Reports\Queries\Module_09.cs" />
+    <Compile Include="Forms\Settings\frmUsersComments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\frmUsersComments.Designer.cs">
+      <DependentUpon>frmUsersComments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\frmFtpFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\frmFtpFile.Designer.cs">
+      <DependentUpon>frmFtpFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\ImportSourcefile\dlgStartupMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\ImportSourcefile\dlgStartupMessage.Designer.cs">
+      <DependentUpon>dlgStartupMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\SourceReports\dlgAddBaseColumn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\SourceReports\dlgAddBaseColumn.Designer.cs">
+      <DependentUpon>dlgAddBaseColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\SourceReports\dlgAddCustomColumn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\SourceReports\dlgAddCustomColumn.Designer.cs">
+      <DependentUpon>dlgAddCustomColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\SourceReports\dlgAddSourceReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\SourceReports\dlgAddSourceReport.Designer.cs">
+      <DependentUpon>dlgAddSourceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\SourceReports\dlgSourceMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\SourceReports\dlgSourceMap.Designer.cs">
+      <DependentUpon>dlgSourceMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\Library\SourceReportsManager.cs" />
+    <Compile Include="Forms\Settings\frmPublicMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\frmPublicMessage.Designer.cs">
+      <DependentUpon>frmPublicMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\OfficialForms\dlgAddOfficialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\OfficialForms\dlgAddOfficialForm.Designer.cs">
+      <DependentUpon>dlgAddOfficialForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Library\OfficeFormsManager.cs" />
+    <Compile Include="Forms\Reports\Master\dlgNewReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\Master\dlgNewReport.designer.cs">
+      <DependentUpon>dlgNewReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\Master\dlgReportsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\Master\dlgReportsList.Designer.cs">
+      <DependentUpon>dlgReportsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\Etebarat\frmExpertReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\Etebarat\frmExpertReports.Designer.cs">
+      <DependentUpon>frmExpertReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\Etebarat\frmExpertsPerformance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\Etebarat\frmExpertsPerformance.Designer.cs">
+      <DependentUpon>frmExpertsPerformance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Library\Facilitys.cs" />
+    <Compile Include="Forms\Profile\Etebarat\Library\RequestManager.cs" />
+    <Compile Include="Forms\Profile\Etebarat\Print\dlgConditionsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Print\dlgConditionsList.Designer.cs">
+      <DependentUpon>dlgConditionsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Information\dlgFacilitysList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Information\dlgFacilitysList.Designer.cs">
+      <DependentUpon>dlgFacilitysList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Print\dlgHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Print\dlgHistory.Designer.cs">
+      <DependentUpon>dlgHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Print\dlgChangeStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Print\dlgChangeStatus.Designer.cs">
+      <DependentUpon>dlgChangeStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Library\FilesManager.cs" />
+    <Compile Include="Forms\Profile\Etebarat\Arshive\dlgAllLoanFiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Arshive\dlgAllLoanFiles.Designer.cs">
+      <DependentUpon>dlgAllLoanFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\msgPleaseWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\msgPleaseWait.Designer.cs">
+      <DependentUpon>msgPleaseWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Information\dlgNotariesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Information\dlgNotariesList.Designer.cs">
+      <DependentUpon>dlgNotariesList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Information\Library\Users.cs" />
+    <Compile Include="Forms\Settings\frmChangePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\frmChangePass.Designer.cs">
+      <DependentUpon>frmChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\frmAlerts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\frmAlerts.Designer.cs">
+      <DependentUpon>frmAlerts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\dlgDataLogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\dlgDataLogs.Designer.cs">
+      <DependentUpon>dlgDataLogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Print\dlgInstalmentsTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Print\dlgInstalmentsTable.Designer.cs">
+      <DependentUpon>dlgInstalmentsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\TehranApprovals\dlgSendToTehran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\TehranApprovals\dlgSendToTehran.Designer.cs">
+      <DependentUpon>dlgSendToTehran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\Library\Network.cs" />
+    <Compile Include="Forms\Main\Login\msgLocalConnection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main\Login\msgLocalConnection.Designer.cs">
+      <DependentUpon>msgLocalConnection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\SourceReports\dlgSourceTables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\SourceReports\dlgSourceTables.Designer.cs">
+      <DependentUpon>dlgSourceTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\SourceReports\dlgAddVirtualColumn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\SourceReports\dlgAddVirtualColumn.Designer.cs">
+      <DependentUpon>dlgAddVirtualColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\SourceReports\frmSourceReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\SourceReports\frmSourceReports.Designer.cs">
+      <DependentUpon>frmSourceReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AES.cs" />
+    <Compile Include="Modules\Backup.cs" />
+    <Compile Include="Modules\Categories.cs" />
+    <Compile Include="Modules\ChkSum.cs" />
+    <Compile Include="Modules\ClipboardToDatatable.cs" />
+    <Compile Include="Modules\DirectoryCopy.cs" />
+    <Compile Include="Modules\QueryProperties.cs" />
+    <Compile Include="Modules\GridBandExcelMap.cs" />
+    <Compile Include="Modules\IComboBoxEditItem.cs" />
+    <Compile Include="Modules\UDF.cs" />
+    <Compile Include="Modules\ExcelMethods.cs" />
+    <Compile Include="Modules\DevExportToXlsx.cs" />
+    <Compile Include="Modules\XmlSpreadSheet.cs" />
+    <Compile Include="Modules\XtraFormCenterText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\ContractId.cs" />
+    <Compile Include="Modules\MessagesSys.cs" />
+    <Compile Include="Modules\MoneyBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\Library\QueryManager.cs" />
+    <Compile Include="Modules\TreeViewChecked.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\XlsFileSettings.cs" />
+    <Compile Include="Forms\Information\dlgUsersList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Information\dlgUsersList.Designer.cs">
+      <DependentUpon>dlgUsersList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\ImportSourcefile\dlgShowSourcefile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\ImportSourcefile\dlgShowSourcefile.Designer.cs">
+      <DependentUpon>dlgShowSourcefile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\TehranApprovals\dlgReceiveFromTehran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\TehranApprovals\dlgReceiveFromTehran.Designer.cs">
+      <DependentUpon>dlgReceiveFromTehran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\Etebarat\Requests\frmRequestsReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\Etebarat\Requests\frmRequestsReports.Designer.cs">
+      <DependentUpon>frmRequestsReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Print\frmRequestPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Print\frmRequestPrint.designer.cs">
+      <DependentUpon>frmRequestPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Circulation\frmCirculationLoanFiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Circulation\frmCirculationLoanFiles.designer.cs">
+      <DependentUpon>frmCirculationLoanFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\Etebarat\Requests\dlgChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\Etebarat\Requests\dlgChart.designer.cs">
+      <DependentUpon>dlgChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\OfficialForms\frmOfficialForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\OfficialForms\frmOfficialForms.designer.cs">
+      <DependentUpon>frmOfficialForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\TehranApprovals\frmTehranApprovals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\TehranApprovals\frmTehranApprovals.Designer.cs">
+      <DependentUpon>frmTehranApprovals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Information\dlgBranchesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Information\dlgBranchesList.designer.cs">
+      <DependentUpon>dlgBranchesList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Information\dlgEditPhones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Information\dlgEditPhones.Designer.cs">
+      <DependentUpon>dlgEditPhones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main\frmMain.designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\MyFiles\frmMyLoanFiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\MyFiles\frmMyLoanFiles.Designer.cs">
+      <DependentUpon>frmMyLoanFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Arshive\frmNewLoanFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\Arshive\frmNewLoanFile.Designer.cs">
+      <DependentUpon>frmNewLoanFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\AddExpertReport\frmAddExpertReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile\Etebarat\AddExpertReport\frmAddExpertReport.Designer.cs">
+      <DependentUpon>frmAddExpertReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\ImportSourcefile\frmImportSourcefile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\ImportSourcefile\frmImportSourcefile.Designer.cs">
+      <DependentUpon>frmImportSourcefile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Clac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\MathParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\XMLQuery.cs" />
+    <Compile Include="Forms\Main\Login\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main\Login\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\msgInputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Information\Library\Branches.cs" />
+    <Compile Include="Modules\FilterdTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\INumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\Numeral.cs" />
+    <Compile Include="Modules\PersianDate.cs" />
+    <Compile Include="Modules\WordDocument.cs" />
+    <Compile Include="Modules\XmlBuilder.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="Dialogs\msgLoopLoading.resx">
+      <DependentUpon>msgLoopLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\msgProgressBar.resx">
+      <DependentUpon>msgProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Information\dlgJobsList.resx">
+      <DependentUpon>dlgJobsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Information\dlgPostsList.resx">
+      <DependentUpon>dlgPostsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Information\dlgRulesList.resx">
+      <DependentUpon>dlgRulesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\Arshive\dlgArchiveLogs.resx">
+      <DependentUpon>dlgArchiveLogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\Arshive\dlgWriteFileNo.resx">
+      <DependentUpon>dlgWriteFileNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\MyFiles\dlgAddExpertReportNote.resx">
+      <DependentUpon>dlgAddExpertReportNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\MyFiles\dlgRejectLoanFile.resx">
+      <DependentUpon>dlgRejectLoanFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\Print\dlgAddLinkedRequest.resx">
+      <DependentUpon>dlgAddLinkedRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\Print\dlgFormNo.resx">
+      <DependentUpon>dlgFormNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\Review\dlgAddFx.resx">
+      <DependentUpon>dlgAddFx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\TehranApprovals\dlgAddRequest.resx">
+      <DependentUpon>dlgAddRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\frmSendComment.resx">
+      <DependentUpon>frmSendComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Hoghoghi\Circulation\frmCirculationLegalFiles.resx">
+      <DependentUpon>frmCirculationLegalFiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Hoghoghi\NewFile\dlgAddPlaque.resx">
+      <DependentUpon>dlgAddPlaque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Kargozini\AllPersonnels\frmAllPersonnels.resx">
+      <DependentUpon>frmAllPersonnels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Kargozini\Personnel\dlgAddRule.resx">
+      <DependentUpon>dlgAddRule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Kargozini\Personnel\dlgAllRules.resx">
+      <DependentUpon>dlgAllRules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Kargozini\Personnel\frmNewPerson.resx">
+      <DependentUpon>frmNewPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\OfficialForms\dlgCirculars.resx">
+      <DependentUpon>dlgCirculars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\Master\dlgBranchInfo.resx">
+      <DependentUpon>dlgBranchInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\Master\dlgExportList.resx">
+      <DependentUpon>dlgExportList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\Master\dlgResume.resx">
+      <DependentUpon>dlgResume.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\Master\frmReports.resx">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Hoghoghi\MyFiles\frmMyLegalFiles.resx">
+      <DependentUpon>frmMyLegalFiles.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\Arshive\dlgAddCover.resx">
+      <DependentUpon>dlgAddCover.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\Arshive\dlgAddLoanFile.resx">
+      <DependentUpon>dlgAddLoanFile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\Arshive\dlgEditFile.resx">
+      <DependentUpon>dlgEditFile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\Arshive\dlgArshiveReviewForm.resx">
+      <DependentUpon>dlgArshiveReviewForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Hoghoghi\NewFile\dlgAddAction.resx">
+      <DependentUpon>dlgAddAction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Hoghoghi\NewFile\dlgChangeLevels.resx">
+      <DependentUpon>dlgChangeLevels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\Review\dlgAddRequest.resx">
+      <DependentUpon>dlgAddRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\Review\dlgHistoryLog.resx">
+      <DependentUpon>dlgHistoryLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\dlgSendLetter.resx">
+      <DependentUpon>dlgSendLetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Hoghoghi\NewFile\frmNewLegalFile.resx">
+      <DependentUpon>frmNewLegalFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\Review\frmReviewLoanFile.resx">
+      <DependentUpon>frmReviewLoanFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\Master\dlgSortList.resx">
+      <DependentUpon>dlgSortList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\Etebarat\Requests\dlgShowReport.resx">
+      <DependentUpon>dlgShowReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\Hoghoghi\frmLegalExpertsPerformance.resx">
+      <DependentUpon>frmLegalExpertsPerformance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\Library\IChart.resx">
+      <DependentUpon>IChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\Master\frmIChartView.resx">
+      <DependentUpon>frmIChartView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\TreeReports\frmTreeReports.resx">
+      <DependentUpon>frmTreeReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\frmUsersComments.resx">
+      <DependentUpon>frmUsersComments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\frmFtpFile.resx">
+      <DependentUpon>frmFtpFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\ImportSourcefile\dlgStartupMessage.resx">
+      <DependentUpon>dlgStartupMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\SourceReports\dlgAddBaseColumn.resx">
+      <DependentUpon>dlgAddBaseColumn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\SourceReports\dlgAddCustomColumn.resx">
+      <DependentUpon>dlgAddCustomColumn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\SourceReports\dlgAddSourceReport.resx">
+      <DependentUpon>dlgAddSourceReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\SourceReports\dlgAddVirtualColumn.resx">
+      <DependentUpon>dlgAddVirtualColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\SourceReports\dlgSourceMap.resx">
+      <DependentUpon>dlgSourceMap.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\frmPublicMessage.resx">
+      <DependentUpon>frmPublicMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\OfficialForms\dlgAddOfficialForm.resx">
+      <DependentUpon>dlgAddOfficialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\Master\dlgNewReport.resx">
+      <DependentUpon>dlgNewReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\Master\dlgReportsList.resx">
+      <DependentUpon>dlgReportsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\Etebarat\frmExpertsPerformance.resx">
+      <DependentUpon>frmExpertsPerformance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\Etebarat\frmExpertReports.resx">
+      <DependentUpon>frmExpertReports.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\Print\dlgConditionsList.resx">
+      <DependentUpon>dlgConditionsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Information\dlgFacilitysList.resx">
+      <DependentUpon>dlgFacilitysList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\Print\dlgHistory.resx">
+      <DependentUpon>dlgHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\Print\dlgChangeStatus.resx">
+      <DependentUpon>dlgChangeStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\Arshive\dlgAllLoanFiles.resx">
+      <DependentUpon>dlgAllLoanFiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Information\dlgUsersList.resx">
+      <DependentUpon>dlgUsersList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\frmChangePass.resx">
+      <DependentUpon>frmChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\frmAlerts.resx">
+      <DependentUpon>frmAlerts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\dlgDataLogs.resx">
+      <DependentUpon>dlgDataLogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\Circulation\frmCirculationLoanFiles.resx">
+      <DependentUpon>frmCirculationLoanFiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\Print\dlgInstalmentsTable.resx">
+      <DependentUpon>dlgInstalmentsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\TehranApprovals\dlgSendToTehran.resx">
+      <DependentUpon>dlgSendToTehran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\ImportSourcefile\frmImportSourcefile.resx">
+      <DependentUpon>frmImportSourcefile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\ImportSourcefile\dlgShowSourcefile.resx">
+      <DependentUpon>dlgShowSourcefile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\AddExpertReport\frmAddExpertReport.resx">
+      <DependentUpon>frmAddExpertReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\msgPleaseWait.resx">
+      <DependentUpon>msgPleaseWait.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\Print\frmRequestPrint.resx">
+      <DependentUpon>frmRequestPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\Arshive\frmNewLoanFile.resx">
+      <DependentUpon>frmNewLoanFile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\Etebarat\Requests\dlgChart.resx">
+      <DependentUpon>dlgChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\OfficialForms\frmOfficialForms.resx">
+      <DependentUpon>frmOfficialForms.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\MyFiles\frmMyLoanFiles.resx">
+      <DependentUpon>frmMyLoanFiles.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\TehranApprovals\frmTehranApprovals.resx">
+      <DependentUpon>frmTehranApprovals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile\Etebarat\TehranApprovals\dlgReceiveFromTehran.resx">
+      <DependentUpon>dlgReceiveFromTehran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\Etebarat\Requests\frmRequestsReports.resx">
+      <DependentUpon>frmRequestsReports.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Information\dlgBranchesList.resx">
+      <DependentUpon>dlgBranchesList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Information\dlgEditPhones.resx">
+      <DependentUpon>dlgEditPhones.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main\Login\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main\Login\msgLocalConnection.resx">
+      <DependentUpon>msgLocalConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Information\dlgNotariesList.resx">
+      <DependentUpon>dlgNotariesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\SourceReports\dlgSourceTables.resx">
+      <DependentUpon>dlgSourceTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\SourceReports\frmSourceReports.resx">
+      <DependentUpon>frmSourceReports.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Clac.resx">
+      <DependentUpon>Clac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\FilterdTextBox.resx">
+      <DependentUpon>FilterdTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\msgInputBox.resx">
+      <DependentUpon>msgInputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TreeViewChecked.resx">
+      <DependentUpon>TreeViewChecked.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ballyellow_16x16.png" />
+    <None Include="Resources\lightman.jpg" />
+    <None Include="Resources\redup_16x16.png" />
+    <None Include="Resources\greendown_16x16.png" />
+    <None Include="Resources\up_16x16.png" />
+    <None Include="Resources\down_16x16.png" />
+    <None Include="Resources\updater.exe" />
+    <None Include="Resources\ballblue_16x16.png" />
+    <None Include="bin\Debug\updater.exe" />
+    <Content Include="bm.ico" />
+    <None Include="Resources\grayemployeeexcellence_16x16.png" />
+    <None Include="Resources\ballorange_16x16.png" />
+    <None Include="Resources\ballred_16x16.png" />
+    <None Include="Resources\ballgreen_16x16.png" />
+    <None Include="Resources\bmlogo_mainback.gif" />
+    <None Include="Resources\bmlogo.png" />
+    <None Include="Resources\bmlogo_bw.png" />
+    <None Include="Resources\loginback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.4.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 4.0 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
